@@ -21,3 +21,6 @@ plugins=(osx git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+unsetopt auto_name_dirs
+source ~/.rvm/scripts/rvm
