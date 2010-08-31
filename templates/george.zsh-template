@@ -22,5 +22,27 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+
+# =============================================
+# = Hitch (doesn't work under $ZSH/custom/ or =
+# = $ZSH/functions                           
+# =============================================
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'
+
+
+# =======
+# = RVM =
+# =======
 unsetopt auto_name_dirs
 source ~/.rvm/scripts/rvm
+
+
+# ==================
+# = Hitch (part 2) =
+# ==================
+# Uncomment to persist pair info between terminal instances
+hitch
