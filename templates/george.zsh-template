@@ -40,6 +40,9 @@ alias unhitch='hitch -u'
 unsetopt auto_name_dirs
 source ~/.rvm/scripts/rvm
 
+# completion (zsh)
+fpath=(~/.zsh/Completion $fpath)
+
 
 # ==================
 # = Hitch (part 2) =
