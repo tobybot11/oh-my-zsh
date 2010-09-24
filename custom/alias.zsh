@@ -81,6 +81,7 @@ alias ttr="touch tmp/restart.txt"
 alias ttrd="ttr tmp/restart.txt tmp/debug.txt"
 alias cf="cucumber features/"
 alias spsp="spec spec/"
+alias be="bundle exec"
 
 # ==========
 # = Github =
