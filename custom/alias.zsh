@@ -100,8 +100,6 @@ alias apachelogs="cd /var/log/apache2/"
 # alias truncateapachelogs="apachestop && sudo rm -f /var/log/apache2/access_log /var/log/apache2/error_log && sudo kill -1 `cat /private/var/run/httpd.pid` && apachestart"
 alias truncateapachelogs="apachestop && sudo rm -f /var/log/apache2/access_log /var/log/apache2/error_log && apachestart"
 
-
-
 # =========
 # = Nginx =
 # =========
