@@ -34,6 +34,7 @@ alias ls="/bin/ls -AFlPhG"
 alias mv="mv -i"
 
 alias w='cd ~/work'
+alias att='cd ~/work/att_synaptic'
 # alias ..='cd ..'
 # alias :='cd ..'
 # alias ::='cd ../..'
@@ -47,8 +48,8 @@ alias hg="history | grep"
 # = Management =
 # ==============
 alias resource="source $ZSH/oh-my-zsh.sh"
-alias ea="mate -w $ZSH/custom/alias.zsh && resource"
-alias ez="mate $ZSH && resource"
+alias ea="aquamacs $ZSH/custom/alias.zsh && resource"
+alias ez="aquamacs $ZSH && resource"
 alias ag='alias | grep'
 
 
@@ -139,7 +140,8 @@ alias mountlacie="sudo /usr/local/bin/ntfs-3g /dev/disk1s1 /Volumes/Windows -o f
 alias rmmysql="ssh -L 8888:localhost:3306 deploy@dhunter.railsmachina.com" # STC production/staging databases
 alias bcmysql="ssh -p 30000 -L 8889:localhost:3306 george@benevolentcode.com" # BenevolentCode (Wordpress) databases
 alias ppc="pwd | pbcopy"
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+# alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias a="aquamacs"
 
 # ====================
 # = Project-specific =
@@ -150,7 +152,7 @@ alias deploy_staas_staging="git push github pre_production_deploy:pre_production
 alias wa="cd ~/work/att_synaptic"
 alias wb="cd ~/work/bwfa"
 alias ws="cd ~/work/stc_partner_plan"
-alias was="cd ~/work/att_synaptic && git sh"
+alias was="cd ~/work/att_synaptic && git show"
 alias wbs="cd ~/work/bwfa && git sh"
 alias wss="cd ~/work/stc_partner_plan && git sh"
 alias resetemc="cd ~/work/mock_emc_api/ && rake db:migrate:reset db:test:load db:populate && rake db:populate && cd -"
