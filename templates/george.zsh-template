@@ -44,6 +44,8 @@ source ~/.rvm/scripts/rvm
 fpath=(~/.zsh/Completion $fpath)
 
 
+export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
 # ==================
 # = Hitch (part 2) =
 # ==================
