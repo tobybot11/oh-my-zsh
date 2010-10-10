@@ -15,11 +15,30 @@
 if [ "$(whoami)" = "root" ]; then NCOLOR="red"; else NCOLOR="yellow"; fi
 
 # PROMPT='%{$fg[$NCOLOR]%}%c ➤ %{$reset_color%}'
-# george- PROMPT='%{$fg[$NCOLOR]%}%c ∴ %{$reset_color%}'
-PROMPT="$fg[$NCOLOR]%2~ %(?..[%?] )%{$reset_color%}∴ "
+# george - PROMPT='%{$fg[$NCOLOR]%}%c ∴ %{$reset_color%}'
+# Soliah - PROMPT='%{$fg[blue]%}%B%20~%b%{$reset_color%}%{$(git_prompt_info)%} $ '
+# tobias first - PROMPT="$fg[$NCOLOR]%4~%b %(?..[%?] )%{$reset_color%}∴ "
+PROMPT='%{$fg[$NCOLOR]%}%20~ %(?..[%?] )%{$reset_color%}∴ '
+HOLD_PROMPT=$PROMPT
+
+# RPROMPT
 #RPROMPT='%{$fg[$NCOLOR]%}%p $(git_prompt_info)%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+export GIT_MODE=0
+
+function git_mode() {
+  if [ $GIT_MODE -eq 0 ]; then
+    PROMPT='%{$fg[$NCOLOR]%}%20~ %{$reset_color%}%{$(git_prompt_info)%} ∴ '
+    GIT_MODE=1
+  else
+    PROMPT=$HOLD_PROMPT
+    GIT_MODE=0
+  fi	     
+}  
+
+     

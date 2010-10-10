@@ -141,6 +141,21 @@ alias ppc="pwd | pbcopy"
 # alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias a="aquamacs"
 
+# =======
+# = RVM =
+# =======
+alias rgn="rvm gemset name"
+alias rgd="rvm gemdir"
+alias rgl="rvm use ree@global"
+alias gld="gem list -d | egrep '\([0-9].*\)|Installed'"
+
+# =========
+# = ijump =
+# =========
+alias ijb="ssh tford@msubls01.emc.usi.net"
+alias ija="ssh tford@mdsxaaw11.usi.net"
+alias ij="ssh tford@mdsxaaw11.usi.net"
+
 # ====================
 # = Project-specific =
 # ====================
@@ -153,5 +168,9 @@ alias ws="cd ~/work/stc_partner_plan"
 alias was="cd ~/work/att_synaptic && git show"
 alias wbs="cd ~/work/bwfa && git sh"
 alias wss="cd ~/work/stc_partner_plan && git sh"
-alias resetemc="cd ~/work/mock_emc_api/ && rake db:migrate:reset db:test:load db:populate && rake db:populate && cd -"
+alias resetemc="cd ~/work/mock_emc_api/ && rake db:migrate:reset db:test:load db:populate && rake db:populate" 
+alias resetatt="cd ~/work/att_synaptic && rake db:test:purge db:test:load && RAILS_ENV='test' rake db:populate"
+
+alias p80="cd ~/work/att_synaptic; rvmsudo script/server -p 80"
+alias p3013="cd ~/work/mock_emc_api; bundle exec unicorn_rails -p 3013"
 

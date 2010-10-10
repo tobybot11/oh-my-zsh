@@ -45,9 +45,13 @@ fpath=(~/.zsh/Completion $fpath)
 
 
 export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export HISTSIZE=1000000  
+export SAVEHIST=1000000
 
 # ==================
 # = Hitch (part 2) =
 # ==================
 # Uncomment to persist pair info between terminal instances
 hitch
+## Command history configuration
+
