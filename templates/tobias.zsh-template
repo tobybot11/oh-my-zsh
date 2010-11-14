@@ -43,10 +43,33 @@ source ~/.rvm/scripts/rvm
 # completion (zsh)
 fpath=(~/.zsh/Completion $fpath)
 
-
 export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export HISTSIZE=1000000  
 export SAVEHIST=1000000
+
+# =============
+# favorite curl 
+# =============
+
+declare -x SC_VERSION="X-Cloud-Specification-Version: 0.1"
+declare -x SC_VERSION2="X-Cloud-Specification-Version: 0.2"
+declare -x SC_ERROR="application/vnd.com.sun.cloud.ErrorMessage+json"
+declare -x SC_MESSAGES="application/vnd.com.sun.cloud.common.Messages+json"
+declare -x SC_ACCOUNT="application/vnd.com.sun.cloud.Account+json"
+declare -x SC_LOGIN="application/vnd.com.sun.cloud.Login+json"
+declare -x SC_ONBOARD="application/vnd.com.sun.cloud.Onboard+json"
+declare -x SC_CLOUD="application/vnd.com.sun.cloud.Cloud+json"
+declare -x SC_CLUSTER="application/vnd.com.sun.cloud.Cluster+json"
+declare -x SC_VDC="application/vnd.com.sun.cloud.VDC+json"
+declare -x SC_VNET="application/vnd.com.sun.cloud.Vnet+json"
+declare -x SC_VM="application/vnd.com.sun.cloud.Vm+json"
+declare -x SC_VOLUME="application/vnd.com.sun.cloud.Volume+json"
+declare -x SC_VMTEMPLATE="application/vnd.com.sun.cloud.Vmtemplate+json"
+
+declare -x SC_HOST="https://compute.synaptic.att.com/CirrusServices/resources"
+declare -x SC_R1CI="https://compute.synaptic.att.com/CirrusServices/resources"
+declare -x SC_ASH1="https://206.17.20.10/CirrusServices/resources"
+
 
 # ==================
 # = Hitch (part 2) =
