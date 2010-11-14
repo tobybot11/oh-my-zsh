@@ -41,7 +41,8 @@ unsetopt auto_name_dirs
 source ~/.rvm/scripts/rvm
 
 # completion (zsh)
-fpath=(~/.zsh/Completion $fpath)
+fpath=(~/.oh-my-zsh/completions $fpath)
+compinit
 
 
 export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:$PATH"

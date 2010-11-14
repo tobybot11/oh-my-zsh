@@ -146,7 +146,7 @@ alias a="aquamacs"
 # =======
 alias rgn="rvm gemset name"
 alias rgd="rvm gemdir"
-alias rgl="rvm use ree@global"
+alias rug="rvm use ree@global"
 alias gld="gem list -d | egrep '\([0-9].*\)|Installed'"
 
 # =========
