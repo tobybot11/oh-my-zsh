@@ -44,7 +44,7 @@ source ~/.rvm/scripts/rvm
 fpath=(~/.oh-my-zsh/completions $fpath)
 compinit
 
-export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin:/Users/tford/bin:$PATH"
 export HISTSIZE=1000000  
 export SAVEHIST=1000000
 
@@ -58,6 +58,9 @@ declare -x SC_ERROR="application/vnd.com.sun.cloud.ErrorMessage+json"
 declare -x SC_MESSAGES="application/vnd.com.sun.cloud.common.Messages+json"
 declare -x SC_ACCOUNT="application/vnd.com.sun.cloud.Account+json"
 declare -x SC_LOGIN="application/vnd.com.sun.cloud.Login+json"
+declare -x SC_LB="application/vnd.com.sun.cloud.Lb+json"
+declare -x SC_LBPOOL="application/vnd.com.sun.cloud.LbPool+json"
+declare -x SC_LBPOOLMEMBER="application/vnd.com.sun.cloud.LbPoolMember+json"
 declare -x SC_ONBOARD="application/vnd.com.sun.cloud.Onboard+json"
 declare -x SC_CLOUD="application/vnd.com.sun.cloud.Cloud+json"
 declare -x SC_CLUSTER="application/vnd.com.sun.cloud.Cluster+json"
@@ -66,6 +69,7 @@ declare -x SC_VNET="application/vnd.com.sun.cloud.Vnet+json"
 declare -x SC_VM="application/vnd.com.sun.cloud.Vm+json"
 declare -x SC_VOLUME="application/vnd.com.sun.cloud.Volume+json"
 declare -x SC_VMTEMPLATE="application/vnd.com.sun.cloud.Vmtemplate+json"
+
 
 declare -x SC_HOST="https://compute.synaptic.att.com/CirrusServices/resources"
 declare -x SC_R1CI="https://compute.synaptic.att.com/CirrusServices/resources"
